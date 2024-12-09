@@ -3,28 +3,31 @@
 {{#post}}
 
 <main class="content" role="main">
+    <article class="{{post_class}}">
 
-	    <article class="{{post_class}}">
+        {{#match @page.show_title_and_feature_image}}
+            <header class="post-header">
+                <div class="inner">
+                    <h1 class="post-title">{{{title}}}</h1>
 
-				<div class="wrapper-o">
-					<div class="wrapper">
+                    {{#if custom_excerpt}}
+                        <p class="post-excerpt">{{custom_excerpt}}</p>
+                    {{/if}}
 
-						<header class="post-header">
-							<div class="inner">
-								<h1 class="post-title">{{{title}}}</h1>
-							</div>
-						</header>
+                    {{#if feature_image}}
+                        <div class="post-feature-image">
+                            <img src="{{feature_image}}" alt="{{title}}" class="page-feature-image">
+                        </div>
+                    {{/if}}
+                </div>
+            </header>
+        {{/match}}
 
-						<div class="inner">
-							<section class="post-content">
-								{{content}}
-							</section>
-						</div>
+        <section class="post-content">
+            {{content}}
+        </section>
 
-				    {{/post}}
-					</div>
-				</div>
-
-	    </article>
-
+    </article>
 </main>
+
+{{/post}}

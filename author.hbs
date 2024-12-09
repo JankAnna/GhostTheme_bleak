@@ -2,7 +2,7 @@
 
 {{#author}}
 
-<header id="header" class="header{{#if cover_image}} has-cover{{else}}{{#if @blog.cover_image}} has-cover{{/if}}{{/if}}">
+<header id="header" class="header{{#if cover_image}} has-cover{{else}}{{#if @site.cover_image}} has-cover{{/if}}{{/if}}">
 	<div class="inner">
 		<span class="header-title">
 			<figure class="header-image avatar">
@@ -33,8 +33,8 @@
 	{{#if cover_image}}
 	<div class="header-cover" style="background-image: url('{{img_url cover_image}}');"></div>
 	{{else}}
-	{{#if @blog.cover_image}}
-	<div class="header-cover" style="background-image: url('{{img_url @blog.cover_image}}');"></div>
+	{{#if @site.cover_image}}
+	<div class="header-cover" style="background-image: url('{{img_url @site.cover_image}}');"></div>
 	{{/if}}
 	{{/if}}
 </header>
