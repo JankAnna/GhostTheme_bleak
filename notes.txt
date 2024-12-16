@@ -1,0 +1,19 @@
+Version: 1.6.1 Update ERROR
+
+Error: package.json property "name" must be lowercase
+The property "name" in your package.json file must be lowercase.
+Good examples are: "my-theme" or "theme" rather than "My Theme" or "Theme".
+Check the package.json documentation for further information.
+Affected files:
+
+    package.json
+
+Error: package.json property "name" must be hyphenated
+The property "name" in your package.json file must be hyphenated.
+Please use "my-theme" rather than "My Theme" or "my theme".
+Check the package.json documentation for further information.
+Affected files:
+
+    package.json
+
+[!] Name: GhostTheme_bleak jest nieprawidłowe zostawiam: bleak :)

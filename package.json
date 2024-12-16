@@ -1,5 +1,5 @@
 {
-  "name": "GhostTheme_bleak",
+  "name": "bleak",
   "description": "GhostTheme_bleak to zmodyfikowana wersja minimalistycznego i responsywnego motywu Bleak dla platformy Ghost CMS. Zawiera poprawki błędów, aktualizacje CSS oraz dostosowania do najnowszej wersji platformy. Idealne rozwiązanie dla użytkowników szukających prostego, eleganckiego motywu blogowego, kładącego nacisk na czytelność i łatwość użytkowania.",
   "version": "1.6.1",
   "engines": {
